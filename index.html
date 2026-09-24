@@ -3,179 +3,461 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>High Tee Classics | Liquid Laundry Soap</title>
+
+  <meta name="description" content="High Tee Classics premium liquid laundry soap. Powerful cleaning, fresh fragrance and everyday household versatility.">
+
+  <title>High Tee Classics | Clean. Fresh. Classic.</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <div class="logo">HIGH TEE <span>CLASSICS</span></div>
+  <!-- HEADER -->
+  <header class="site-header">
 
-  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <a href="index.html" class="brand">
+      <span class="brand-main">HIGH TEE</span>
+      <span class="brand-sub">CLASSICS</span>
+    </a>
 
-  <nav id="navLinks">
-    <a href="index.html">Home</a>
-    <a href="product.html">Product</a>
-    <a href="about.html">About</a>
-    <a href="order.html">Order</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Open menu">
+      ☰
+    </button>
 
-<main>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="product.html">Product</a>
+      <a href="about.html">About</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-<section class="hero">
-  <div class="hero-text">
-    <p class="tagline">CLEAN • FRESH • CLASSIC</p>
+  </header>
 
-    <h1>Powerful Cleaning.<br><span>Fresh Every Wash.</span></h1>
 
-    <p>
-      High Tee Classics Liquid Laundry Soap gives your clothes
-      a deep clean while leaving them fresh and beautifully scented.
-    </p>
+  <!-- HERO -->
+  <main>
 
-    <div class="hero-buttons">
-      <a href="order.html" class="btn">Order Now</a>
-      <a href="product.html" class="btn secondary">View Product</a>
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <div class="eyebrow">
+          PREMIUM LIQUID LAUNDRY SOAP
+        </div>
+
+        <h1>
+          CLEAN CLOTHES.
+          <span>FRESH LIFE.</span>
+        </h1>
+
+        <p class="hero-text">
+          Give your clothes the care they deserve with
+          High Tee Classics Liquid Laundry Soap —
+          powerful cleaning with a refreshing Lemon & Lavender scent.
+        </p>
+
+        <div class="hero-actions">
+
+          <a href="order.html" class="btn btn-primary">
+            Order Now
+            <span>→</span>
+          </a>
+
+          <a href="product.html" class="btn btn-outline">
+            Explore Product
+          </a>
+
+        </div>
+
+        <div class="hero-details">
+
+          <div>
+            <strong>₦2,499</strong>
+            <small>1 Litre</small>
+          </div>
+
+          <div class="detail-line"></div>
+
+          <div>
+            <strong>Fresh</strong>
+            <small>Lemon & Lavender</small>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-product">
+
+        <div class="product-glow"></div>
+
+        <div class="floating-badge">
+          <span>01</span>
+          <small>EVERYDAY<br>CLEAN</small>
+        </div>
+
+        <img
+          src="assets/product-1.jpg"
+          alt="High Tee Classics Liquid Laundry Soap"
+        >
+
+      </div>
+
+    </section>
+
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip">
+
+      <div class="trust-item">
+        <span>✦</span>
+        <div>
+          <strong>Deep Cleaning</strong>
+          <small>Powerful everyday clean</small>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span>✦</span>
+        <div>
+          <strong>Fresh Scent</strong>
+          <small>Lemon & Lavender</small>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span>✦</span>
+        <div>
+          <strong>Versatile</strong>
+          <small>Home & laundry use</small>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <span>✦</span>
+        <div>
+          <strong>1 Litre</strong>
+          <small>₦2,499 per bottle</small>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+    <section class="intro-section">
+
+      <div class="section-heading">
+
+        <span class="eyebrow">
+          THE HIGH TEE CLASSICS DIFFERENCE
+        </span>
+
+        <h2>
+          More than clean.<br>
+          <span>It's a fresh feeling.</span>
+        </h2>
+
+      </div>
+
+      <div class="intro-copy">
+
+        <p>
+          High Tee Classics is made for everyday homes that
+          want clean fabrics, a refreshing fragrance and
+          a reliable cleaning solution.
+        </p>
+
+        <a href="about.html" class="arrow-link">
+          Discover our story
+          <span>↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURED PRODUCT -->
+    <section class="featured-section">
+
+      <div class="featured-image">
+
+        <img
+          src="assets/product-2.jpg"
+          alt="High Tee Classics Laundry Soap"
+        >
+
+        <div class="image-label">
+          HIGH TEE<br>
+          <strong>CLASSICS</strong>
+        </div>
+
+      </div>
+
+
+      <div class="featured-content">
+
+        <span class="eyebrow">
+          EVERYDAY ESSENTIAL
+        </span>
+
+        <h2>
+          Your clothes<br>
+          deserve <span>better.</span>
+        </h2>
+
+        <p>
+          Designed for coloured and white fabrics,
+          High Tee Classics helps keep your clothes
+          clean and fresh without compromising your
+          everyday washing routine.
+        </p>
+
+        <ul class="feature-list">
+
+          <li>
+            <span>✓</span>
+            Deep cleaning performance
+          </li>
+
+          <li>
+            <span>✓</span>
+            Fresh Lemon & Lavender fragrance
+          </li>
+
+          <li>
+            <span>✓</span>
+            Suitable for coloured & white fabrics
+          </li>
+
+          <li>
+            <span>✓</span>
+            Useful beyond laundry
+          </li>
+
+        </ul>
+
+        <a href="product.html" class="btn btn-dark">
+          View Full Product
+          <span>→</span>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- USE CASES -->
+    <section class="uses-section">
+
+      <div class="center-heading">
+
+        <span class="eyebrow">
+          ONE PRODUCT. MANY USES.
+        </span>
+
+        <h2>
+          Made for your<br>
+          <span>everyday home.</span>
+        </h2>
+
+      </div>
+
+
+      <div class="uses-grid">
+
+        <article class="use-card large">
+
+          <img
+            src="assets/product-3.jpg"
+            alt="High Tee Classics"
+          >
+
+          <div class="use-overlay">
+            <small>01</small>
+            <h3>Laundry</h3>
+            <p>
+              Fresh, clean fabrics for your everyday wear.
+            </p>
+          </div>
+
+        </article>
+
+
+        <article class="use-card">
+
+          <div class="use-number">02</div>
+
+          <div class="use-icon">⌂</div>
+
+          <h3>Home</h3>
+
+          <p>
+            A versatile cleaning option for everyday
+            household needs.
+          </p>
+
+        </article>
+
+
+        <article class="use-card dark">
+
+          <div class="use-number">03</div>
+
+          <div class="use-icon">✦</div>
+
+          <h3>Freshness</h3>
+
+          <p>
+            Leave your cleaning routine with a
+            refreshing Lemon & Lavender scent.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCT CTA -->
+    <section class="product-cta">
+
+      <div>
+
+        <span class="eyebrow">
+          READY FOR A BETTER CLEAN?
+        </span>
+
+        <h2>
+          Make every wash<br>
+          <span>a classic.</span>
+        </h2>
+
+        <p>
+          Get your 1 litre bottle of High Tee Classics today.
+        </p>
+
+        <a href="order.html" class="btn btn-light">
+          Order High Tee Classics
+          <span>→</span>
+        </a>
+
+      </div>
+
+      <div class="cta-bottle">
+
+        <img
+          src="assets/product-1.jpg"
+          alt="High Tee Classics"
+        >
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="footer-main">
+
+      <div class="footer-brand">
+
+        <a href="index.html" class="brand footer-logo">
+          <span class="brand-main">HIGH TEE</span>
+          <span class="brand-sub">CLASSICS</span>
+        </a>
+
+        <p>
+          Quality liquid laundry soap for
+          cleaner clothes and fresher homes.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Explore</h4>
+
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="about.html">About Us</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Order</h4>
+
+        <a href="order.html">Place an Order</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="https://wa.me/2347066778612" target="_blank">
+          WhatsApp
+        </a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Follow</h4>
+
+        <a
+          href="https://instagram.com/hightee_classics"
+          target="_blank">
+          Instagram
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@hightee_classics"
+          target="_blank">
+          TikTok
+        </a>
+
+        <a href="tel:07066778612">
+          07066778612
+        </a>
+
+      </div>
+
     </div>
 
-    <div class="price">
-      ₦2,499 <small>/ 1 litre</small>
-    </div>
-  </div>
 
-  <div class="hero-image">
-    <img src="assets/product-1.jpg" alt="High Tee Classics Liquid Laundry Soap">
-  </div>
-</section>
+    <div class="footer-bottom">
 
+      <span>
+        © 2026 High Tee Classics
+      </span>
 
-<section class="features">
-  <div class="feature">
-    <h3>Deep Cleaning</h3>
-    <p>Helps remove dirt and stains from your clothes.</p>
-  </div>
+      <span>
+        Akure, Ondo State
+      </span>
 
-  <div class="feature">
-    <h3>Gentle Formula</h3>
-    <p>Gentle on hands and suitable for regular washing.</p>
-  </div>
-
-  <div class="feature">
-    <h3>Fresh Scent</h3>
-    <p>Enjoy a refreshing Lemon & Lavender fragrance.</p>
-  </div>
-
-  <div class="feature">
-    <h3>Versatile</h3>
-    <p>Suitable for clothes, floors, bathrooms and more.</p>
-  </div>
-</section>
-
-
-<section class="about-preview">
-  <div>
-    <p class="section-label">WHY HIGH TEE CLASSICS?</p>
-
-    <h2>More Than Just Laundry Soap</h2>
-
-    <p>
-      Designed for coloured and white fabrics, High Tee Classics
-      helps keep your clothes clean and fresh without bleaching them.
-    </p>
-
-    <a href="about.html" class="text-link">Learn More →</a>
-  </div>
-
-  <img src="assets/product-2.jpg" alt="High Tee Classics product">
-</section>
-
-
-<section class="product-preview">
-  <p class="section-label">OUR PRODUCT</p>
-
-  <h2>Clean Clothes. Fresh Feeling.</h2>
-
-  <div class="product-grid">
-
-    <div class="product-card">
-      <img src="assets/product-1.jpg" alt="High Tee Classics">
-      <h3>Liquid Laundry Soap</h3>
-      <p>1 Litre</p>
-      <strong>₦2,499</strong>
-      <a href="order.html" class="btn">Order Now</a>
     </div>
 
-    <div class="product-card">
-      <img src="assets/product-2.jpg" alt="High Tee Classics Laundry Soap">
-      <h3>For Coloured & White Fabrics</h3>
-      <p>Suitable for everyday washing.</p>
-      <a href="product.html" class="btn secondary">View Details</a>
-    </div>
-
-    <div class="product-card">
-      <img src="assets/product-3.jpg" alt="High Tee Classics">
-      <h3>Fresh Lemon & Lavender</h3>
-      <p>Clean clothes with a refreshing scent.</p>
-      <a href="order.html" class="btn">Buy Now</a>
-    </div>
-
-  </div>
-</section>
+  </footer>
 
 
-<section class="cta">
-  <h2>Ready for a Better Clean?</h2>
-  <p>Get your bottle of High Tee Classics today.</p>
-  <a href="order.html" class="btn">Place an Order</a>
-</section>
-
-</main>
+  <!-- FLOATING WHATSAPP -->
   <a
-  href="https://wa.me/2347066778612"
-  target="_blank"
-  class="whatsapp-float"
-  aria-label="Chat with High Tee Classics on WhatsApp">
-  💬
-</a>
+    href="https://wa.me/2347066778612"
+    target="_blank"
+    class="whatsapp-float"
+    aria-label="Chat with High Tee Classics on WhatsApp">
+    💬
+  </a>
 
 
-<footer>
-  <div>
-    <h3>HIGH TEE CLASSICS</h3>
-    <p>Quality Liquid Laundry Soap.</p>
-  </div>
-
-  <div>
-    <p>📍 Akure, Ondo State</p>
-    <p>📞 07066778612</p>
-  </div>
-
-  <div>
-    <p>
-      Instagram:
-      <a href="https://instagram.com/hightee_classics" target="_blank">
-        @hightee_classics
-      </a>
-    </p>
-
-    <p>
-      TikTok:
-      <a href="https://tiktok.com/@hightee_classics" target="_blank">
-        @hightee_classics
-      </a>
-    </p>
-  </div>
-
-  <p class="copyright">
-    © 2026 High Tee Classics. All Rights Reserved.
-  </p>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
