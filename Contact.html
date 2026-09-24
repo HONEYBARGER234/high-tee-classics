@@ -1,1 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Contact | Hightee Classics</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7f3ee;
+      color: #222;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .header {
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .header h1 {
+      color: #5a351d;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      color: #777;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      margin-bottom: 18px;
+      border-radius: 16px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+    }
+
+    .card h2 {
+      color: #5a351d;
+      margin-bottom: 15px;
+    }
+
+    .contact-item {
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .contact-item:last-child {
+      border-bottom: none;
+    }
+
+    .contact-item strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .contact-item a {
+      color: #5a351d;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 7px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #5a351d;
+    }
+
+    .send-btn {
+      width: 100%;
+      padding: 15px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 11px;
+      background: #25D366;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .social-btn {
+      display: block;
+      text-align: center;
+      padding: 13px;
+      margin-top: 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      background: #5a351d;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin: 25px 0;
+      color: #5a351d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Contact Hightee Classics</h1>
+      <p>
+        Have a question or want to place an order?
+        Get in touch with us.
+      </p>
+    </div>
+
+    <div class="card">
+
+      <h2>Get In Touch</h2>
+
+      <div class="contact-item">
+        <strong>📱 WhatsApp</strong>
+        <a href="https://wa.me/2347066778612" target="_blank">
+          07066778612
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <strong>📞 Phone</strong>
+        <a href="tel:07066778612">
+          07066778612
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <strong>📸 Instagram</strong>
+        <a
+          href="https://instagram.com/hightee_classics"
+          target="_blank"
+        >
+          @hightee_classics
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <strong>🎵 TikTok</strong>
+        <a
+          href="https://www.tiktok.com/@hightee_classics"
+          target="_blank"
+        >
+          @hightee_classics
+        </a>
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h2>Send Us A Message</h2>
+
+      <form id="contactForm">
+
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        >
+
+        <label for="phone">Phone Number</label>
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter your phone number"
+          required
+        >
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          placeholder="Type your message..."
+          required
+        ></textarea>
+
+        <button class="send-btn" type="submit">
+          Send Message on WhatsApp
+        </button>
+
+      </form>
+
+    </div>
+
+    <div class="card">
+
+      <h2>Follow Us</h2>
+
+      <a
+        class="social-btn"
+        href="https://instagram.com/hightee_classics"
+        target="_blank"
+      >
+        Instagram
+      </a>
+
+      <a
+        class="social-btn"
+        href="https://www.tiktok.com/@hightee_classics"
+        target="_blank"
+      >
+        TikTok
+      </a>
+
+      <a
+        class="social-btn"
+        href="https://wa.me/2347066778612"
+        target="_blank"
+      >
+        WhatsApp
+      </a>
+
+    </div>
+
+    <a href="index.html" class="back">
+      ← Back to Home
+    </a>
+
+  </div>
+
+  <script>
+
+    document
+      .getElementById("contactForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value.trim();
+
+        const phone =
+          document.getElementById("phone").value.trim();
+
+        const message =
+          document.getElementById("message").value.trim();
+
+        const whatsappMessage =
+          "Hello Hightee Classics!%0A%0A" +
+          "Name: " + encodeURIComponent(name) + "%0A" +
+          "Phone: " + encodeURIComponent(phone) + "%0A%0A" +
+          "Message:%0A" +
+          encodeURIComponent(message);
+
+        const whatsappURL =
+          "https://wa.me/2347066778612?text=" +
+          whatsappMessage;
+
+        window.open(whatsappURL, "_blank");
+
+      });
+
+  </script>
+
+</body>
+</html>
