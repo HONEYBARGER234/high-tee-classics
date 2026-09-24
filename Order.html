@@ -1,1 +1,372 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Order | Hightee Classics</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f7f3ee;
+      color: #222;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .header h1 {
+      font-size: 30px;
+      color: #5a351d;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .product {
+      background: #faf7f3;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .product h2 {
+      color: #5a351d;
+      margin-bottom: 8px;
+    }
+
+    .product .size {
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 25px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    label {
+      display: block;
+      margin-top: 16px;
+      margin-bottom: 7px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #5a351d;
+    }
+
+    textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .quantity-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .quantity-box button {
+      width: 45px;
+      height: 45px;
+      border: none;
+      border-radius: 10px;
+      background: #5a351d;
+      color: white;
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    #quantity {
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .summary {
+      margin-top: 25px;
+      padding: 18px;
+      border-radius: 12px;
+      background: #f3eee8;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .summary-row.total {
+      border-top: 1px solid #ddd;
+      padding-top: 12px;
+      margin-top: 12px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .order-btn {
+      width: 100%;
+      margin-top: 25px;
+      padding: 16px;
+      border: none;
+      border-radius: 12px;
+      background: #25D366;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .order-btn:hover {
+      opacity: 0.9;
+    }
+
+    .socials {
+      text-align: center;
+      margin-top: 25px;
+      color: #777;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .socials strong {
+      color: #5a351d;
+    }
+
+    .back {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #5a351d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Hightee Classics</h1>
+      <p>Place your order below</p>
+    </div>
+
+    <div class="product">
+      <h2>Hightee Classics</h2>
+      <div class="size">1 Litre Bottle</div>
+      <div class="price">₦2,499</div>
+    </div>
+
+    <form id="orderForm">
+
+      <label for="name">Full Name</label>
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your full name"
+        required
+      >
+
+      <label for="phone">Phone Number</label>
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Enter your phone number"
+        required
+      >
+
+      <label for="address">Delivery Address</label>
+      <textarea
+        id="address"
+        placeholder="Enter your delivery address"
+        required
+      ></textarea>
+
+      <label>Quantity</label>
+
+      <div class="quantity-box">
+        <button type="button" onclick="changeQuantity(-1)">−</button>
+
+        <input
+          type="number"
+          id="quantity"
+          value="1"
+          min="1"
+          readonly
+        >
+
+        <button type="button" onclick="changeQuantity(1)">+</button>
+      </div>
+
+      <label for="payment">Payment Method</label>
+
+      <select id="payment" required>
+        <option value="">Select payment method</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+        <option value="Cash on Delivery">Cash on Delivery</option>
+      </select>
+
+      <div class="summary">
+
+        <div class="summary-row">
+          <span>Price per bottle</span>
+          <span>₦2,499</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Quantity</span>
+          <span id="summaryQuantity">1</span>
+        </div>
+
+        <div class="summary-row total">
+          <span>Total</span>
+          <span id="total">₦2,499</span>
+        </div>
+
+      </div>
+
+      <button class="order-btn" type="submit">
+        Order via WhatsApp
+      </button>
+
+    </form>
+
+    <div class="socials">
+      <strong>WhatsApp:</strong> 07066778612<br>
+      <strong>Instagram:</strong> @hightee_classics<br>
+      <strong>TikTok:</strong> @hightee_classics
+    </div>
+
+    <a href="index.html" class="back">
+      ← Back to Home
+    </a>
+
+  </div>
+
+  <script>
+
+    const price = 2499;
+
+    function changeQuantity(amount) {
+
+      const quantityInput = document.getElementById("quantity");
+
+      let quantity = parseInt(quantityInput.value);
+
+      quantity += amount;
+
+      if (quantity < 1) {
+        quantity = 1;
+      }
+
+      quantityInput.value = quantity;
+
+      updateTotal();
+    }
+
+    function updateTotal() {
+
+      const quantity =
+        parseInt(document.getElementById("quantity").value);
+
+      const total = price * quantity;
+
+      document.getElementById("summaryQuantity").textContent =
+        quantity;
+
+      document.getElementById("total").textContent =
+        "₦" + total.toLocaleString();
+    }
+
+    document
+      .getElementById("orderForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value.trim();
+
+        const phone =
+          document.getElementById("phone").value.trim();
+
+        const address =
+          document.getElementById("address").value.trim();
+
+        const quantity =
+          document.getElementById("quantity").value;
+
+        const payment =
+          document.getElementById("payment").value;
+
+        const total =
+          price * parseInt(quantity);
+
+        const message =
+          "Hello Hightee Classics!%0A%0A" +
+          "I want to place an order.%0A%0A" +
+          "Name: " + encodeURIComponent(name) + "%0A" +
+          "Phone: " + encodeURIComponent(phone) + "%0A" +
+          "Address: " + encodeURIComponent(address) + "%0A" +
+          "Quantity: " + quantity + " bottle(s)%0A" +
+          "Price per bottle: ₦2,499%0A" +
+          "Total: ₦" + total.toLocaleString() + "%0A" +
+          "Payment: " + encodeURIComponent(payment);
+
+        const whatsappNumber = "2347066778612";
+
+        const whatsappURL =
+          "https://wa.me/" +
+          whatsappNumber +
+          "?text=" +
+          message;
+
+        window.open(whatsappURL, "_blank");
+
+      });
+
+  </script>
+
+</body>
+</html>
