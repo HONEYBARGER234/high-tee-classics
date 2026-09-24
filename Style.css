@@ -1,1 +1,416 @@
+/* =========================================
+   HIGHTEE CLASSICS - GLOBAL STYLE
+   ========================================= */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f3ee;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+.navbar {
+  width: 100%;
+  background: #5a351d;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(
+    rgba(90, 53, 29, 0.78),
+    rgba(90, 53, 29, 0.78)
+  );
+  color: white;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.btn {
+  display: inline-block;
+  padding: 14px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin: 5px;
+}
+
+.btn-primary {
+  background: white;
+  color: #5a351d;
+}
+
+.btn-secondary {
+  background: #25D366;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* =========================================
+   GENERAL SECTIONS
+   ========================================= */
+
+.section {
+  padding: 70px 6%;
+}
+
+.section-title {
+  text-align: center;
+  color: #5a351d;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* =========================================
+   PRODUCT CARDS
+   ========================================= */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h3 {
+  color: #5a351d;
+  margin-bottom: 8px;
+}
+
+.product-price {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* =========================================
+   ABOUT SECTION
+   ========================================= */
+
+.about {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.about p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* =========================================
+   ORDER FORM
+   ========================================= */
+
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #5a351d;
+}
+
+/* =========================================
+   TOTAL / SUMMARY
+   ========================================= */
+
+.summary {
+  background: #f3eee8;
+  padding: 18px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.summary-total {
+  border-top: 1px solid #ddd;
+  padding-top: 12px;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* =========================================
+   WHATSAPP BUTTON
+   ========================================= */
+
+.whatsapp-btn {
+  display: block;
+  width: 100%;
+  background: #25D366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 11px;
+  font-weight: bold;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.whatsapp-btn:hover {
+  opacity: 0.9;
+}
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.contact-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.contact-card h3 {
+  color: #5a351d;
+  margin-bottom: 8px;
+}
+
+.contact-card a {
+  color: #5a351d;
+  font-weight: bold;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  background: #5a351d;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: white;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: 65vh;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 27px;
+  }
+
+}
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 400px) {
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+}
