@@ -706,3 +706,167 @@ font-size: 31px;
 height: 300px;
 }
 }
+/* =========================
+ABOUT PAGE
+========================= */
+
+.about-detail {
+padding: 85px 7%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 70px;
+align-items: center;
+background: white;
+}
+
+.about-image img {
+width: 100%;
+max-height: 550px;
+object-fit: cover;
+border-radius: 25px;
+box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+}
+
+.about-text h2 {
+font-size: 40px;
+color: #3e2414;
+margin-bottom: 20px;
+}
+
+.about-text p:not(.section-label) {
+color: #666;
+font-size: 17px;
+margin-bottom: 18px;
+max-width: 600px;
+}
+
+/* =========================
+VALUES
+========================= */
+
+.values {
+padding: 85px 7%;
+text-align: center;
+background: #f7f3ee;
+}
+
+.values h2 {
+font-size: 38px;
+color: #3e2414;
+margin-bottom: 35px;
+}
+
+.values-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.value-card {
+background: white;
+padding: 35px 25px;
+border-radius: 20px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+transition: 0.3s;
+}
+
+.value-card:hover {
+transform: translateY(-6px);
+}
+
+.value-icon {
+font-size: 38px;
+margin-bottom: 15px;
+}
+
+.value-card h3 {
+color: #5a351d;
+font-size: 22px;
+margin-bottom: 10px;
+}
+
+.value-card p {
+color: #666;
+font-size: 15px;
+}
+
+/* =========================
+LOCATION
+========================= */
+
+.location-section {
+padding: 85px 7%;
+background:
+linear-gradient(
+135deg,
+#ead9c7,
+#f7f3ee
+);
+}
+
+.location-section > div {
+max-width: 750px;
+}
+
+.location-section h2 {
+color: #3e2414;
+font-size: 40px;
+margin-bottom: 18px;
+}
+
+.location-section p:not(.section-label) {
+color: #666;
+font-size: 17px;
+margin-bottom: 25px;
+}
+
+/* =========================
+ABOUT PAGE MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+.about-detail {
+grid-template-columns: 1fr;
+padding: 60px 5%;
+gap: 40px;
+}
+
+.about-text {
+text-align: center;
+}
+
+.about-text h2 {
+font-size: 32px;
+}
+
+.about-text p:not(.section-label) {
+margin-left: auto;
+margin-right: auto;
+}
+
+.values {
+padding: 60px 5%;
+}
+
+.values h2 {
+font-size: 31px;
+}
+
+.values-grid {
+grid-template-columns: 1fr;
+}
+
+.location-section {
+padding: 60px 5%;
+text-align: center;
+}
+
+.location-section > div {
+margin: auto;
+}
+
+.location-section h2 {
+font-size: 32px;
+}
+}
