@@ -1,300 +1,320 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Contact | High Tee Classics</title>  <link rel="stylesheet" href="style.css">
+</head><body><header>  <div class="logo">
+    HIGH TEE <span>CLASSICS</span>
+  </div><button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-  <title>Contact | Hightee Classics</title>
+  <nav id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="product.html">Product</a>
+    <a href="about.html">About</a>
+    <a href="order.html">Order</a>
+    <a href="contact.html">Contact</a>
+  </nav></header><main><section class="page-hero">  <p class="section-label">GET IN TOUCH</p>  <h1>Contact High Tee Classics</h1>  <p>
+    Have a question, need more information or want to place an order?
+    We're here to help.
+  </p></section><section class="contact-page">  <div class="contact-grid"><!-- CONTACT INFORMATION -->
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
+<div class="contact-info">
 
-    body {
-      background: #f7f3ee;
-      color: #222;
-      padding: 20px;
-    }
+  <p class="section-label">CONTACT US</p>
 
-    .container {
-      max-width: 650px;
-      margin: auto;
-    }
+  <h2>Let's Talk</h2>
 
-    .header {
-      text-align: center;
-      padding: 30px 10px;
-    }
+  <p class="contact-description">
+    Reach High Tee Classics directly through WhatsApp,
+    phone or social media.
+  </p>
 
-    .header h1 {
-      color: #5a351d;
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
 
-    .header p {
-      color: #777;
-      line-height: 1.6;
-    }
+  <div class="contact-card">
 
-    .card {
-      background: white;
-      padding: 22px;
-      margin-bottom: 18px;
-      border-radius: 16px;
-      box-shadow: 0 6px 25px rgba(0,0,0,0.07);
-    }
+    <div class="contact-icon">📱</div>
 
-    .card h2 {
-      color: #5a351d;
-      margin-bottom: 15px;
-    }
+    <div>
+      <h3>WhatsApp</h3>
 
-    .contact-item {
-      padding: 14px 0;
-      border-bottom: 1px solid #eee;
-    }
-
-    .contact-item:last-child {
-      border-bottom: none;
-    }
-
-    .contact-item strong {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .contact-item a {
-      color: #5a351d;
-      text-decoration: none;
-      word-break: break-word;
-    }
-
-    label {
-      display: block;
-      font-weight: bold;
-      margin-top: 15px;
-      margin-bottom: 7px;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      padding: 13px;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      font-size: 15px;
-      outline: none;
-    }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
-    }
-
-    input:focus,
-    textarea:focus {
-      border-color: #5a351d;
-    }
-
-    .send-btn {
-      width: 100%;
-      padding: 15px;
-      margin-top: 20px;
-      border: none;
-      border-radius: 11px;
-      background: #25D366;
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .social-btn {
-      display: block;
-      text-align: center;
-      padding: 13px;
-      margin-top: 10px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      color: white;
-      background: #5a351d;
-    }
-
-    .back {
-      display: block;
-      text-align: center;
-      margin: 25px 0;
-      color: #5a351d;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="container">
-
-    <div class="header">
-      <h1>Contact Hightee Classics</h1>
-      <p>
-        Have a question or want to place an order?
-        Get in touch with us.
-      </p>
-    </div>
-
-    <div class="card">
-
-      <h2>Get In Touch</h2>
-
-      <div class="contact-item">
-        <strong>📱 WhatsApp</strong>
-        <a href="https://wa.me/2347066778612" target="_blank">
-          07066778612
-        </a>
-      </div>
-
-      <div class="contact-item">
-        <strong>📞 Phone</strong>
-        <a href="tel:07066778612">
-          07066778612
-        </a>
-      </div>
-
-      <div class="contact-item">
-        <strong>📸 Instagram</strong>
-        <a
-          href="https://instagram.com/hightee_classics"
-          target="_blank"
-        >
-          @hightee_classics
-        </a>
-      </div>
-
-      <div class="contact-item">
-        <strong>🎵 TikTok</strong>
-        <a
-          href="https://www.tiktok.com/@hightee_classics"
-          target="_blank"
-        >
-          @hightee_classics
-        </a>
-      </div>
-
-    </div>
-
-    <div class="card">
-
-      <h2>Send Us A Message</h2>
-
-      <form id="contactForm">
-
-        <label for="name">Your Name</label>
-        <input
-          type="text"
-          id="name"
-          placeholder="Enter your name"
-          required
-        >
-
-        <label for="phone">Phone Number</label>
-        <input
-          type="tel"
-          id="phone"
-          placeholder="Enter your phone number"
-          required
-        >
-
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          placeholder="Type your message..."
-          required
-        ></textarea>
-
-        <button class="send-btn" type="submit">
-          Send Message on WhatsApp
-        </button>
-
-      </form>
-
-    </div>
-
-    <div class="card">
-
-      <h2>Follow Us</h2>
+      <p>Chat with us directly.</p>
 
       <a
-        class="social-btn"
-        href="https://instagram.com/hightee_classics"
-        target="_blank"
-      >
-        Instagram
-      </a>
-
-      <a
-        class="social-btn"
-        href="https://www.tiktok.com/@hightee_classics"
-        target="_blank"
-      >
-        TikTok
-      </a>
-
-      <a
-        class="social-btn"
         href="https://wa.me/2347066778612"
-        target="_blank"
-      >
-        WhatsApp
+        target="_blank">
+        07066778612
       </a>
-
     </div>
-
-    <a href="index.html" class="back">
-      ← Back to Home
-    </a>
 
   </div>
 
-  <script>
 
-    document
-      .getElementById("contactForm")
-      .addEventListener("submit", function(event) {
+  <div class="contact-card">
 
-        event.preventDefault();
+    <div class="contact-icon">📞</div>
 
-        const name =
-          document.getElementById("name").value.trim();
+    <div>
+      <h3>Phone</h3>
 
-        const phone =
-          document.getElementById("phone").value.trim();
+      <p>Call us directly.</p>
 
-        const message =
-          document.getElementById("message").value.trim();
+      <a href="tel:07066778612">
+        07066778612
+      </a>
+    </div>
 
-        const whatsappMessage =
-          "Hello Hightee Classics!%0A%0A" +
-          "Name: " + encodeURIComponent(name) + "%0A" +
-          "Phone: " + encodeURIComponent(phone) + "%0A%0A" +
-          "Message:%0A" +
-          encodeURIComponent(message);
+  </div>
 
-        const whatsappURL =
-          "https://wa.me/2347066778612?text=" +
-          whatsappMessage;
 
-        window.open(whatsappURL, "_blank");
+  <div class="contact-card">
 
-      });
+    <div class="contact-icon">📸</div>
 
-  </script>
+    <div>
+      <h3>Instagram</h3>
 
-</body>
-</html>
+      <p>Follow our Instagram page.</p>
+
+      <a
+        href="https://instagram.com/hightee_classics"
+        target="_blank">
+        @hightee_classics
+      </a>
+    </div>
+
+  </div>
+
+
+  <div class="contact-card">
+
+    <div class="contact-icon">🎵</div>
+
+    <div>
+      <h3>TikTok</h3>
+
+      <p>Follow us on TikTok.</p>
+
+      <a
+        href="https://www.tiktok.com/@hightee_classics"
+        target="_blank">
+        @hightee_classics
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- MESSAGE FORM -->
+
+<div class="contact-form-box">
+
+  <p class="section-label">SEND A MESSAGE</p>
+
+  <h2>How Can We Help?</h2>
+
+  <form id="contactForm">
+
+    <div class="form-group">
+
+      <label for="name">
+        Your Name
+      </label>
+
+      <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+        required>
+
+    </div>
+
+
+    <div class="form-group">
+
+      <label for="phone">
+        Phone Number
+      </label>
+
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Enter your phone number"
+        required>
+
+    </div>
+
+
+    <div class="form-group">
+
+      <label for="message">
+        Message
+      </label>
+
+      <textarea
+        id="message"
+        placeholder="Type your message..."
+        required></textarea>
+
+    </div>
+
+
+    <button
+      type="submit"
+      class="btn whatsapp-contact-btn">
+
+      Send Message on WhatsApp
+
+    </button>
+
+  </form>
+
+</div>
+
+  </div></section><section class="contact-social">  <p class="section-label">
+    FOLLOW HIGH TEE CLASSICS
+  </p>  <h2>Stay Connected</h2>  <div class="social-grid"><a
+  href="https://instagram.com/hightee_classics"
+  target="_blank"
+  class="social-card">
+
+  <span>📸</span>
+
+  <strong>Instagram</strong>
+
+  <small>@hightee_classics</small>
+
+</a>
+
+
+<a
+  href="https://www.tiktok.com/@hightee_classics"
+  target="_blank"
+  class="social-card">
+
+  <span>🎵</span>
+
+  <strong>TikTok</strong>
+
+  <small>@hightee_classics</small>
+
+</a>
+
+
+<a
+  href="https://wa.me/2347066778612"
+  target="_blank"
+  class="social-card">
+
+  <span>💬</span>
+
+  <strong>WhatsApp</strong>
+
+  <small>07066778612</small>
+
+</a>
+
+  </div></section><section class="cta">  <h2>Ready to Order?</h2>  <p>
+    Get your 1 litre bottle of High Tee Classics today.
+  </p>  <a href="order.html" class="btn">
+    Place an Order
+  </a></section></main><footer>  <div>
+    <h3>HIGH TEE CLASSICS</h3><p>
+  Quality Liquid Laundry Soap.
+</p>
+
+  </div>  <div><p>📍 Akure, Ondo State</p>
+
+<p>📞 07066778612</p>
+
+  </div>  <div><p>
+  Instagram:
+  <a
+    href="https://instagram.com/hightee_classics"
+    target="_blank">
+    @hightee_classics
+  </a>
+</p>
+
+<p>
+  TikTok:
+  <a
+    href="https://www.tiktok.com/@hightee_classics"
+    target="_blank">
+    @hightee_classics
+  </a>
+</p>
+
+  </div>  <p class="copyright">
+    © 2026 High Tee Classics. All Rights Reserved.
+  </p></footer><script>
+
+function toggleMenu() {
+
+  const nav =
+    document.getElementById("navLinks");
+
+  if (nav) {
+    nav.classList.toggle("active");
+  }
+
+}
+
+
+document
+  .getElementById("contactForm")
+  .addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    const name =
+      document
+        .getElementById("name")
+        .value
+        .trim();
+
+
+    const phone =
+      document
+        .getElementById("phone")
+        .value
+        .trim();
+
+
+    const message =
+      document
+        .getElementById("message")
+        .value
+        .trim();
+
+
+    const whatsappMessage =
+
+      "Hello High Tee Classics!%0A%0A" +
+
+      "Name: " +
+      encodeURIComponent(name) +
+      "%0A" +
+
+      "Phone: " +
+      encodeURIComponent(phone) +
+      "%0A%0A" +
+
+      "Message:%0A" +
+      encodeURIComponent(message);
+
+
+    const whatsappURL =
+      "https://wa.me/2347066778612?text=" +
+      whatsappMessage;
+
+
+    window.open(
+      whatsappURL,
+      "_blank"
+    );
+
+  });
+
+</script></body></html>
