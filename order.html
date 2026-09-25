@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -88,6 +88,12 @@
       font-size: 16px;
       box-sizing: border-box;
       outline: none;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #25D366;
     }
 
     .form-group textarea {
@@ -194,7 +200,7 @@
 
     <div class="order-layout">
 
-      <!-- PRODUCT -->
+      <!-- PRODUCT CARD -->
       <div class="order-card">
 
         <img
@@ -204,7 +210,9 @@
 
         <h2>High Tee Classics Liquid Laundry Soap</h2>
 
-        <p class="size">1 Litre • Lemon & Lavender</p>
+        <p class="size">
+          1 Litre • Lemon & Lavender
+        </p>
 
         <div class="price">
           ₦2,499
@@ -217,13 +225,14 @@
       </div>
 
 
-      <!-- FORM -->
+      <!-- ORDER FORM -->
       <div class="order-form">
 
         <form id="orderForm">
 
           <div class="form-group">
             <label for="name">Full Name</label>
+
             <input
               type="text"
               id="name"
@@ -234,6 +243,7 @@
 
           <div class="form-group">
             <label for="phone">Phone Number</label>
+
             <input
               type="tel"
               id="phone"
@@ -242,8 +252,21 @@
           </div>
 
 
+          <!-- EMAIL -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email address"
+              required>
+          </div>
+
+
           <div class="form-group">
             <label for="address">Delivery Address</label>
+
             <textarea
               id="address"
               placeholder="Enter your delivery address"
@@ -283,16 +306,31 @@
             <label for="payment">Payment Method</label>
 
             <select id="payment" required>
-              <option value="">Select payment method</option>
-              <option value="Bank Transfer">Bank Transfer</option>
-              <option value="Cash on Delivery">Cash on Delivery</option>
+
+              <option value="">
+                Select payment method
+              </option>
+
+              <option value="Bank Transfer">
+                Bank Transfer
+              </option>
+
+              <option value="Cash on Delivery">
+                Cash on Delivery
+              </option>
+
             </select>
           </div>
 
 
           <div class="total-box">
+
             <span>Total</span>
-            <span id="total">₦2,499</span>
+
+            <span id="total">
+              ₦2,499
+            </span>
+
           </div>
 
 
@@ -303,6 +341,7 @@
           </button>
 
         </form>
+
 
         <a
           href="product.html"
@@ -329,11 +368,14 @@
 
     const pricePerBottle = 2499;
 
+
     function changeQuantity(amount) {
 
-      const quantityInput = document.getElementById("quantity");
+      const quantityInput =
+        document.getElementById("quantity");
 
-      let quantity = parseInt(quantityInput.value);
+      let quantity =
+        parseInt(quantityInput.value);
 
       quantity += amount;
 
@@ -350,7 +392,9 @@
     function updateTotal() {
 
       const quantity =
-        parseInt(document.getElementById("quantity").value);
+        parseInt(
+          document.getElementById("quantity").value
+        );
 
       const total =
         quantity * pricePerBottle;
@@ -366,20 +410,30 @@
 
         event.preventDefault();
 
+
         const name =
           document.getElementById("name").value.trim();
+
 
         const phone =
           document.getElementById("phone").value.trim();
 
+
+        const email =
+          document.getElementById("email").value.trim();
+
+
         const address =
           document.getElementById("address").value.trim();
+
 
         const quantity =
           document.getElementById("quantity").value;
 
+
         const payment =
           document.getElementById("payment").value;
+
 
         const total =
           Number(quantity) * pricePerBottle;
@@ -391,6 +445,8 @@
 Name: ${name}
 
 Phone: ${phone}
+
+Email: ${email}
 
 Product: Liquid Laundry Soap
 
@@ -409,7 +465,9 @@ Payment Method:
 ${payment}`;
 
 
-        const whatsappNumber = "2347066778612";
+        const whatsappNumber =
+          "2347066778612";
+
 
         const whatsappURL =
           "https://wa.me/" +
@@ -418,7 +476,10 @@ ${payment}`;
           encodeURIComponent(message);
 
 
-        window.open(whatsappURL, "_blank");
+        window.open(
+          whatsappURL,
+          "_blank"
+        );
 
       });
 
