@@ -1,378 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta
-    name="description"
-    content="Order High Tee Classics Liquid Laundry Soap."
-  >
 
   <title>Order | High Tee Classics</title>
 
   <link rel="stylesheet" href="style.css">
 
   <style>
-
-    .order-hero {
-      padding: 100px 7%;
-      text-align: center;
-      background:
-        radial-gradient(
-          circle at 80% 40%,
-          rgba(200,155,92,0.18),
-          transparent 30%
-        ),
-        var(--cream);
-    }
-
-    .order-hero h1 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(48px, 7vw, 76px);
-      line-height: 1;
-      color: var(--brown-dark);
-      margin-bottom: 20px;
-    }
-
-    .order-hero h1 span {
-      color: var(--brown-light);
-    }
-
-    .order-hero p {
-      max-width: 600px;
+    .order-page {
+      padding: 60px 20px;
+      max-width: 1100px;
       margin: auto;
-      color: var(--muted);
-      font-size: 16px;
     }
 
+    .order-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-    .order-section {
-      padding: 100px 7%;
-      background: #fff;
+    .order-title h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .order-title p {
+      opacity: 0.75;
     }
 
     .order-layout {
-      max-width: 1100px;
-      margin: auto;
       display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
-      gap: 60px;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 30px;
       align-items: start;
     }
 
-
-    /* PRODUCT CARD */
-
-    .order-product-card {
-      background: var(--brown-dark);
-      color: white;
+    .order-card,
+    .order-form {
+      background: #fff;
+      border-radius: 20px;
       padding: 25px;
-      position: sticky;
-      top: 105px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.08);
     }
 
-    .order-product-image {
-      position: relative;
-    }
-
-    .order-product-image img {
+    .product-image {
       width: 100%;
-      height: 430px;
+      height: 350px;
       object-fit: cover;
+      border-radius: 16px;
+      display: block;
+      margin-bottom: 20px;
     }
 
-    .order-product-label {
-      position: absolute;
-      left: 15px;
-      bottom: 15px;
-      background: var(--brown-dark);
-      color: white;
-      padding: 12px 16px;
-      font-size: 9px;
-      letter-spacing: 2px;
-    }
-
-    .order-product-info {
-      padding: 25px 5px 5px;
-    }
-
-    .order-product-info h2 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 30px;
-      margin-bottom: 5px;
-    }
-
-    .order-product-info p {
-      color: #bdb1a9;
-      font-size: 13px;
-    }
-
-    .order-product-price {
-      margin-top: 18px;
-      font-size: 27px;
-      font-weight: 700;
-      color: var(--gold-light);
-    }
-
-
-    /* FORM */
-
-    .order-form-box {
-      background: var(--cream-light);
-      padding: 45px;
-      border: 1px solid #eee4db;
-    }
-
-    .order-form-box h2 {
-      font-family: 'Playfair Display', Georgia, serif;
-      color: var(--brown-dark);
-      font-size: 42px;
+    .order-card h2 {
       margin-bottom: 8px;
     }
 
-    .order-form-intro {
-      color: var(--muted);
-      font-size: 14px;
-      margin-bottom: 35px;
+    .price {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .size {
+      margin-bottom: 20px;
+      opacity: 0.75;
     }
 
     .form-group {
-      margin-bottom: 22px;
+      margin-bottom: 18px;
     }
 
     .form-group label {
       display: block;
-      color: var(--brown-dark);
-      font-size: 12px;
-      font-weight: 700;
-      margin-bottom: 8px;
-      letter-spacing: 0.5px;
+      margin-bottom: 7px;
+      font-weight: 600;
     }
 
     .form-group input,
     .form-group textarea,
     .form-group select {
       width: 100%;
-      border: 1px solid #d9cec4;
-      background: white;
-      padding: 15px;
-      border-radius: 2px;
+      padding: 14px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
       outline: none;
-      font-family: inherit;
-      font-size: 14px;
-      color: var(--text);
-      transition: 0.3s;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus {
-      border-color: var(--brown-light);
-      box-shadow: 0 0 0 3px rgba(128,83,53,0.08);
     }
 
     .form-group textarea {
-      min-height: 105px;
+      min-height: 100px;
       resize: vertical;
     }
 
-
-    /* QUANTITY */
-
-    .quantity-control {
+    .quantity-box {
       display: flex;
       align-items: center;
-      width: max-content;
-      border: 1px solid #d9cec4;
-      background: white;
+      gap: 12px;
     }
 
-    .quantity-control button {
-      width: 45px;
-      height: 45px;
+    .quantity-box button {
+      width: 42px;
+      height: 42px;
       border: none;
-      background: var(--brown-dark);
-      color: white;
-      font-size: 20px;
+      border-radius: 8px;
       cursor: pointer;
+      font-size: 22px;
     }
 
-    .quantity-control input {
+    #quantity {
       width: 60px;
-      height: 45px;
-      border: none;
       text-align: center;
-      font-size: 15px;
-      font-weight: 700;
-      outline: none;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 18px;
     }
 
-
-    /* SUMMARY */
-
-    .order-summary {
-      margin: 30px 0;
-      padding: 22px;
-      background: white;
-      border: 1px solid #eee4db;
-    }
-
-    .summary-row {
+    .total-box {
+      margin: 25px 0;
+      padding: 18px;
+      border-radius: 12px;
+      background: #f5f5f5;
       display: flex;
       justify-content: space-between;
-      padding: 8px 0;
-      color: var(--muted);
-      font-size: 13px;
+      font-size: 20px;
+      font-weight: bold;
     }
 
-    .summary-total {
-      border-top: 1px solid #eee4db;
-      margin-top: 8px;
-      padding-top: 15px;
-      color: var(--brown-dark);
-      font-size: 18px;
-      font-weight: 700;
-    }
-
-    .order-submit {
+    .whatsapp-order {
       width: 100%;
       border: none;
-      background: var(--brown-dark);
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      background: #25D366;
       color: white;
     }
 
-    .order-submit:hover {
-      background: var(--brown);
-      transform: translateY(-2px);
+    .whatsapp-order:hover {
+      opacity: 0.9;
     }
 
-    .order-note {
-      margin-top: 15px;
+    .back-link {
+      display: block;
       text-align: center;
-      color: #8a7d74;
-      font-size: 11px;
+      margin-top: 20px;
+      text-decoration: none;
     }
 
-
-    @media (max-width: 900px) {
-
+    @media (max-width: 800px) {
       .order-layout {
         grid-template-columns: 1fr;
-        gap: 45px;
       }
 
-      .order-product-card {
-        position: static;
+      .order-title h1 {
+        font-size: 32px;
       }
 
+      .product-image {
+        height: 300px;
+      }
     }
-
-
-    @media (max-width: 600px) {
-
-      .order-hero {
-        padding: 75px 5%;
-      }
-
-      .order-section {
-        padding: 65px 5%;
-      }
-
-      .order-form-box {
-        padding: 28px 20px;
-      }
-
-      .order-form-box h2 {
-        font-size: 34px;
-      }
-
-      .order-product-image img {
-        height: 380px;
-      }
-
-    }
-
   </style>
-
 </head>
-
 
 <body>
 
-
-<header class="site-header">
-
-  <a href="index.html" class="brand">
-    <span class="brand-main">HIGH TEE</span>
-    <span class="brand-sub">CLASSICS</span>
-  </a>
-
-  <button
-    class="menu-toggle"
-    onclick="toggleMenu()"
-    aria-label="Open menu">
-    ☰
-  </button>
-
-  <nav class="main-nav" id="mainNav">
-
-    <a href="index.html">Home</a>
-
-    <a href="product.html">Product</a>
-
-    <a href="about.html">About</a>
-
-    <a href="order.html" class="active">Order</a>
-
-    <a href="contact.html">Contact</a>
-
-  </nav>
-
-</header>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Product</a>
+      <a href="about.html">About</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
 
-<main>
+  <!-- ORDER SECTION -->
+  <main class="order-page">
 
+    <div class="order-title">
+      <h1>Place Your Order</h1>
+      <p>Get your High Tee Classics Liquid Laundry Soap today.</p>
+    </div>
 
-  <!-- HERO -->
-
-  <section class="order-hero">
-
-    <span class="eyebrow">
-      ORDER HIGH TEE CLASSICS
-    </span>
-
-    <h1>
-      Bring home<br>
-      <span>the clean.</span>
-    </h1>
-
-    <p>
-      Complete your order details below and
-      send your request directly to High Tee Classics.
-    </p>
-
-  </section>
-
-
-  <!-- ORDER AREA -->
-
-  <section class="order-section">
 
     <div class="order-layout">
 
-
       <!-- PRODUCT -->
+      <div class="order-card">
 
-      <div class="order-product-card">
+        <img
+          class="product-image"
+          src="assets/images/IMG-20260923-WA0075.jpg"
+          alt="High Tee Classics Liquid Laundry Soap">
 
-        <div class="order-product-image">
+        <h2>High Tee Classics Liquid Laundry Soap</h2>
 
-          <img
-            src="assets/product-1.jpg"
-            alt="High Tee Classics Liquid Laundry Soap">
+        <p class="size">1 Litre • Lemon & Lavender</p>
 
-          <div class="order-product-label">
-           
+        <div class="price">
+          ₦2,499
+        </div>
+
+        <p>
+          Enjoy fresh-smelling, effective cleaning for your everyday laundry.
+        </p>
+
+      </div>
+
+
+      <!-- FORM -->
+      <div class="order-form">
+
+        <form id="orderForm">
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your full name"
+              required>
+          </div>
+
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Enter your phone number"
+              required>
+          </div>
+
+
+          <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <textarea
+              id="address"
+              placeholder="Enter your delivery address"
+              required></textarea>
+          </div>
+
+
+          <div class="form-group">
+            <label>Quantity</label>
+
+            <div class="quantity-box">
+
+              <button
+                type="button"
+                onclick="changeQuantity(-1)">
+                −
+              </button>
+
+              <input
+                type="number"
+                id="quantity"
+                value="1"
+                min="1"
+                readonly>
+
+              <button
+                type="button"
+                onclick="changeQuantity(1)">
+                +
+              </button>
+
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="payment">Payment Method</label>
+
+            <select id="payment" required>
+              <option value="">Select payment method</option>
+              <option value="Bank Transfer">Bank Transfer</option>
+              <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+          </div>
+
+
+          <div class="total-box">
+            <span>Total</span>
+            <span id="total">₦2,499</span>
+          </div>
+
+
+          <button
+            type="submit"
+            class="whatsapp-order">
+            Order Now on WhatsApp
+          </button>
+
+        </form>
+
+        <a
+          href="product.html"
+          class="back-link">
+          ← Back to Product
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 High Tee Classics. All rights reserved.</p>
+    <p>Akure, Ondo State</p>
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    const pricePerBottle = 2499;
+
+    function changeQuantity(amount) {
+
+      const quantityInput = document.getElementById("quantity");
+
+      let quantity = parseInt(quantityInput.value);
+
+      quantity += amount;
+
+      if (quantity < 1) {
+        quantity = 1;
+      }
+
+      quantityInput.value = quantity;
+
+      updateTotal();
+    }
+
+
+    function updateTotal() {
+
+      const quantity =
+        parseInt(document.getElementById("quantity").value);
+
+      const total =
+        quantity * pricePerBottle;
+
+      document.getElementById("total").textContent =
+        "₦" + total.toLocaleString();
+    }
+
+
+    document
+      .getElementById("orderForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name =
+          document.getElementById("name").value.trim();
+
+        const phone =
+          document.getElementById("phone").value.trim();
+
+        const address =
+          document.getElementById("address").value.trim();
+
+        const quantity =
+          document.getElementById("quantity").value;
+
+        const payment =
+          document.getElementById("payment").value;
+
+        const total =
+          Number(quantity) * pricePerBottle;
+
+
+        const message =
+`HIGH TEE CLASSICS ORDER
+
+Name: ${name}
+
+Phone: ${phone}
+
+Product: Liquid Laundry Soap
+
+Size: 1 Litre
+
+Quantity: ${quantity}
+
+Price per bottle: ₦2,499
+
+Total: ₦${total.toLocaleString()}
+
+Delivery Address:
+${address}
+
+Payment Method:
+${payment}`;
+
+
+        const whatsappNumber = "2347066778612";
+
+        const whatsappURL =
+          "https://wa.me/" +
+          whatsappNumber +
+          "?text=" +
+          encodeURIComponent(message);
+
+
+        window.open(whatsappURL, "_blank");
+
+      });
+
+
+    updateTotal();
+
+  </script>
+
+</body>
+</html>
