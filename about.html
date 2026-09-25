@@ -4,552 +4,231 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Learn more about High Tee Classics and our approach to everyday cleaning.">
-
   <title>About Us | High Tee Classics</title>
 
+  <meta name="description" content="Learn more about High Tee Classics and our premium Lemon & Lavender Liquid Laundry Soap.">
+
   <link rel="stylesheet" href="style.css">
-
-  <style>
-
-    .about-hero {
-      padding: 105px 7%;
-      background:
-        radial-gradient(circle at 80% 40%, rgba(200,155,92,0.18), transparent 30%),
-        var(--cream);
-      text-align: center;
-    }
-
-    .about-hero h1 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(48px, 7vw, 78px);
-      line-height: 1;
-      color: var(--brown-dark);
-      margin-bottom: 20px;
-    }
-
-    .about-hero h1 span {
-      color: var(--brown-light);
-    }
-
-    .about-hero p {
-      max-width: 600px;
-      margin: auto;
-      color: var(--muted);
-      font-size: 16px;
-    }
-
-    .story-section {
-      padding: 110px 7%;
-      background: white;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 90px;
-      align-items: center;
-    }
-
-    .story-image {
-      position: relative;
-    }
-
-    .story-image img {
-      width: 100%;
-      height: 580px;
-      object-fit: cover;
-      border-radius: 3px;
-      box-shadow: 20px 25px 60px rgba(36,21,13,0.16);
-    }
-
-    .story-tag {
-      position: absolute;
-      right: -20px;
-      bottom: 30px;
-      background: var(--brown-dark);
-      color: white;
-      padding: 20px 25px;
-      font-size: 10px;
-      letter-spacing: 2px;
-      line-height: 1.6;
-    }
-
-    .story-content {
-      max-width: 560px;
-    }
-
-    .story-content h2 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(40px, 5vw, 60px);
-      line-height: 1.05;
-      color: var(--brown-dark);
-      margin-bottom: 25px;
-    }
-
-    .story-content h2 span {
-      color: var(--brown-light);
-    }
-
-    .story-content p {
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.9;
-      margin-bottom: 18px;
-    }
-
-    .values-section {
-      padding: 110px 7%;
-      background: var(--cream-light);
-    }
-
-    .values-heading {
-      text-align: center;
-      margin-bottom: 55px;
-    }
-
-    .values-heading h2 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(40px, 5vw, 58px);
-      color: var(--brown-dark);
-      line-height: 1.05;
-    }
-
-    .values-heading h2 span {
-      color: var(--brown-light);
-    }
-
-    .values-grid-new {
-      max-width: 1150px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .value-box {
-      background: white;
-      padding: 42px 32px;
-      min-height: 300px;
-      border-top: 3px solid var(--gold);
-      transition: 0.3s;
-    }
-
-    .value-box:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 15px 35px rgba(36,21,13,0.08);
-    }
-
-    .value-number {
-      color: var(--gold);
-      font-size: 11px;
-      letter-spacing: 2px;
-    }
-
-    .value-box h3 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 29px;
-      color: var(--brown-dark);
-      margin: 55px 0 12px;
-    }
-
-    .value-box p {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.8;
-    }
-
-    .location-section-new {
-      padding: 100px 7%;
-      background: var(--brown-dark);
-      color: white;
-      text-align: center;
-    }
-
-    .location-section-new .eyebrow {
-      color: var(--gold-light);
-    }
-
-    .location-section-new h2 {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(42px, 5vw, 62px);
-      line-height: 1.05;
-      margin-bottom: 20px;
-    }
-
-    .location-section-new h2 span {
-      color: var(--gold-light);
-    }
-
-    .location-section-new p {
-      max-width: 580px;
-      margin: 0 auto 30px;
-      color: #c7bbb3;
-      font-size: 15px;
-    }
-
-    @media (max-width: 900px) {
-
-      .story-section {
-        grid-template-columns: 1fr;
-        gap: 50px;
-      }
-
-      .story-content {
-        margin: auto;
-      }
-
-      .values-grid-new {
-        grid-template-columns: 1fr 1fr;
-      }
-
-    }
-
-    @media (max-width: 600px) {
-
-      .about-hero {
-        padding: 75px 5%;
-      }
-
-      .story-section {
-        padding: 65px 5%;
-      }
-
-      .story-image img {
-        height: 430px;
-      }
-
-      .story-tag {
-        right: 10px;
-        bottom: 15px;
-      }
-
-      .values-section {
-        padding: 70px 5%;
-      }
-
-      .values-grid-new {
-        grid-template-columns: 1fr;
-      }
-
-      .location-section-new {
-        padding: 70px 5%;
-      }
-
-    }
-
-  </style>
 </head>
 
 <body>
 
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav-container">
 
-<header class="site-header">
+      <a href="index.html" class="logo">
+        High Tee <span>Classics</span>
+      </a>
 
-  <a href="index.html" class="brand">
-    <span class="brand-main">HIGH TEE</span>
-    <span class="brand-sub">CLASSICS</span>
+      <nav class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="about.html" class="active">About</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">ABOUT US</p>
+
+      <h1>Freshness You Can Trust</h1>
+
+      <p>
+        Discover the story behind High Tee Classics and our commitment
+        to making everyday cleaning better.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section">
+    <div class="container about-grid">
+
+      <!-- PHOTO -->
+      <div class="about-image">
+        <img
+          src="assets/images/IMG-20260925-WA0027.jpg"
+          alt="High Tee Classics"
+        >
+      </div>
+
+      <!-- TEXT -->
+      <div class="about-content">
+
+        <p class="eyebrow">HIGH TEE CLASSICS</p>
+
+        <h2>Clean Home. Fresh Feeling.</h2>
+
+        <p>
+          High Tee Classics is focused on providing quality liquid laundry
+          soap that makes everyday washing easier and more enjoyable.
+        </p>
+
+        <p>
+          Our Lemon & Lavender Liquid Laundry Soap combines a refreshing
+          fragrance with effective cleaning, making it suitable for your
+          everyday laundry needs.
+        </p>
+
+        <p>
+          We believe that a clean home should also smell fresh and feel
+          comfortable. That's why we pay attention to both cleaning power
+          and freshness.
+        </p>
+
+        <a href="product.html" class="btn">
+          View Our Product
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- WHY CHOOSE US -->
+  <section class="features-section">
+    <div class="container">
+
+      <div class="section-heading">
+        <p class="eyebrow">WHY HIGH TEE CLASSICS</p>
+        <h2>Made For Everyday Life</h2>
+        <p>
+          Simple, fresh and reliable laundry care for your home.
+        </p>
+      </div>
+
+      <div class="features-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">🧼</div>
+          <h3>Quality Cleaning</h3>
+          <p>
+            Designed to help keep your clothes clean and fresh during
+            everyday washing.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌿</div>
+          <h3>Fresh Fragrance</h3>
+          <p>
+            Enjoy the refreshing Lemon & Lavender scent after every wash.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">✨</div>
+          <h3>Everyday Freshness</h3>
+          <p>
+            A practical choice for homes that want clean clothes and
+            lasting freshness.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container cta-content">
+
+      <div>
+        <p class="eyebrow">READY TO ORDER?</p>
+
+        <h2>Bring Freshness Home</h2>
+
+        <p>
+          Get your 1-litre High Tee Classics Liquid Laundry Soap today.
+        </p>
+      </div>
+
+      <a href="order.html" class="btn">
+        Order Now
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+
+      <div>
+        <h3>High Tee Classics</h3>
+
+        <p>
+          Quality liquid laundry soap for a cleaner, fresher home.
+        </p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+
+        <a href="index.html">Home</a>
+        <a href="product.html">Product</a>
+        <a href="about.html">About</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+
+        <p>📍 Akure, Ondo State</p>
+
+        <p>
+          <a href="https://wa.me/2347066778612" target="_blank">
+            WhatsApp: 07066778612
+          </a>
+        </p>
+
+        <p>
+          Instagram:
+          <a href="https://instagram.com/hightee_classics" target="_blank">
+            @hightee_classics
+          </a>
+        </p>
+
+        <p>
+          TikTok:
+          <a href="https://tiktok.com/@hightee_classics" target="_blank">
+            @hightee_classics
+          </a>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2026 High Tee Classics. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- WHATSAPP BUTTON -->
+  <a
+    href="https://wa.me/2347066778612"
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="Chat with High Tee Classics on WhatsApp"
+  >
+    💬
   </a>
-
-  <button
-    class="menu-toggle"
-    onclick="toggleMenu()"
-    aria-label="Open menu">
-    ☰
-  </button>
-
-  <nav class="main-nav" id="mainNav">
-
-    <a href="index.html">Home</a>
-
-    <a href="product.html">Product</a>
-
-    <a href="about.html" class="active">About</a>
-
-    <a href="order.html">Order</a>
-
-    <a href="contact.html">Contact</a>
-
-  </nav>
-
-</header>
-
-
-<main>
-
-
-  <!-- ABOUT HERO -->
-
-  <section class="about-hero">
-
-    <span class="eyebrow">
-      OUR STORY
-    </span>
-
-    <h1>
-      Built around<br>
-      <span>everyday clean.</span>
-    </h1>
-
-    <p>
-      High Tee Classics is focused on making everyday
-      cleaning simple, fresh and reliable.
-    </p>
-
-  </section>
-
-
-  <!-- STORY -->
-
-  <section class="story-section">
-
-    <div class="story-image">
-
-      <img
-        src="assets/product-2.jpg"
-        alt="High Tee Classics Liquid Laundry Soap">
-
-      <div class="story-tag">
-        HIGH TEE<br>
-        CLASSICS
-      </div>
-
-    </div>
-
-
-    <div class="story-content">
-
-      <span class="eyebrow">
-        WHO WE ARE
-      </span>
-
-      <h2>
-        Clean homes.<br>
-        <span>Fresh beginnings.</span>
-      </h2>
-
-      <p>
-        High Tee Classics is a liquid laundry soap brand
-        created around the simple idea that everyday
-        cleaning should feel easier and better.
-      </p>
-
-      <p>
-        Our liquid laundry soap is designed for everyday
-        washing of coloured and white fabrics while
-        delivering a refreshing Lemon & Lavender scent.
-      </p>
-
-      <p>
-        Beyond laundry, the product can also be used for
-        general household cleaning, making it a practical
-        addition to the home.
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <!-- VALUES -->
-
-  <section class="values-section">
-
-    <div class="values-heading">
-
-      <span class="eyebrow">
-        WHAT WE STAND FOR
-      </span>
-
-      <h2>
-        Simple values.<br>
-        <span>Real purpose.</span>
-      </h2>
-
-    </div>
-
-
-    <div class="values-grid-new">
-
-      <div class="value-box">
-
-        <span class="value-number">
-          01 / QUALITY
-        </span>
-
-        <h3>Dependable</h3>
-
-        <p>
-          We aim to provide a reliable cleaning
-          solution for everyday homes and
-          everyday washing routines.
-        </p>
-
-      </div>
-
-
-      <div class="value-box">
-
-        <span class="value-number">
-          02 / FRESHNESS
-        </span>
-
-        <h3>Refreshing</h3>
-
-        <p>
-          Our Lemon & Lavender fragrance adds
-          a fresh character to your everyday
-          cleaning experience.
-        </p>
-
-      </div>
-
-
-      <div class="value-box">
-
-        <span class="value-number">
-          03 / VERSATILITY
-        </span>
-
-        <h3>Practical</h3>
-
-        <p>
-          From laundry to general household
-          cleaning, High Tee Classics is made
-          with versatility in mind.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- LOCATION -->
-
-  <section class="location-section-new">
-
-    <span class="eyebrow">
-      WHERE WE ARE
-    </span>
-
-    <h2>
-      Proudly based in<br>
-      <span>Akure, Ondo State.</span>
-    </h2>
-
-    <p>
-      High Tee Classics serves customers in Akure
-      and beyond, with availability for customers
-      across Nigeria.
-    </p>
-
-    <a href="contact.html" class="btn btn-light">
-      Get In Touch
-      <span>→</span>
-    </a>
-
-  </section>
-
-
-</main>
-
-
-<!-- FOOTER -->
-
-<footer class="site-footer">
-
-  <div class="footer-main">
-
-    <div class="footer-brand">
-
-      <a href="index.html" class="brand footer-logo">
-        <span class="brand-main">HIGH TEE</span>
-        <span class="brand-sub">CLASSICS</span>
-      </a>
-
-      <p>
-        Quality liquid laundry soap for
-        cleaner clothes and fresher homes.
-      </p>
-
-    </div>
-
-
-    <div class="footer-column">
-
-      <h4>EXPLORE</h4>
-
-      <a href="index.html">Home</a>
-
-      <a href="product.html">Product</a>
-
-      <a href="about.html">About Us</a>
-
-    </div>
-
-
-    <div class="footer-column">
-
-      <h4>ORDER</h4>
-
-      <a href="order.html">Place an Order</a>
-
-      <a href="contact.html">Contact Us</a>
-
-    </div>
-
-
-    <div class="footer-column">
-
-      <h4>FOLLOW</h4>
-
-      <a
-        href="https://instagram.com/hightee_classics"
-        target="_blank">
-        Instagram
-      </a>
-
-      <a
-        href="https://www.tiktok.com/@hightee_classics"
-        target="_blank">
-        TikTok
-      </a>
-
-      <a href="tel:07066778612">
-        07066778612
-      </a>
-
-    </div>
-
-  </div>
-
-
-  <div class="footer-bottom">
-
-    <span>
-      © 2026 High Tee Classics
-    </span>
-
-    <span>
-      Akure, Ondo State
-    </span>
-
-  </div>
-
-</footer>
-
-
-<!-- WHATSAPP -->
-
-<a
-  href="https://wa.me/2347066778612"
-  target="_blank"
-  class="whatsapp-float"
-  aria-label="Chat with High Tee Classics on WhatsApp">
-  💬
-</a>
-
-
-<script src="script.js"></script>
 
 </body>
 </html>
