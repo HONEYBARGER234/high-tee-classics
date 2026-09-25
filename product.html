@@ -228,6 +228,10 @@
       transform: scale(1.015);
     }
 
+    .gallery-grid-new .wide-image {
+      grid-column: span 2;
+    }
+
     .product-final-cta {
       padding: 100px 7%;
       background: var(--brown-dark);
@@ -272,7 +276,7 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      .gallery-grid-new img:first-child {
+      .gallery-grid-new .wide-image {
         grid-column: 1 / -1;
       }
     }
@@ -320,7 +324,7 @@
         grid-template-columns: 1fr;
       }
 
-      .gallery-grid-new img:first-child {
+      .gallery-grid-new .wide-image {
         grid-column: auto;
       }
 
@@ -358,10 +362,8 @@
 
 </header>
 
-
 <main>
 
-  <!-- PAGE HERO -->
   <section class="product-page-hero">
 
     <span class="eyebrow">
@@ -376,13 +378,12 @@
   </section>
 
 
-  <!-- PRODUCT -->
   <section class="product-main">
 
     <div class="product-visual">
 
       <img
-        src="assets/product-1.jpg"
+        src="assets/images/IMG-20260923-WA0075.jpg"
         alt="High Tee Classics Liquid Laundry Soap">
 
       <div class="product-stamp">
@@ -469,7 +470,6 @@
   </section>
 
 
-  <!-- USES -->
   <section class="product-uses">
 
     <div class="product-uses-heading">
@@ -540,7 +540,6 @@
   </section>
 
 
-  <!-- GALLERY -->
   <section class="gallery-section">
 
     <span class="eyebrow">
@@ -554,23 +553,27 @@
     <div class="gallery-grid-new">
 
       <img
-        src="assets/product-1.jpg"
-        alt="High Tee Classics Liquid Laundry Soap">
-
-      <img
-        src="assets/product-2.jpg"
+        class="wide-image"
+        src="assets/images/IMG-20260923-WA0076.jpg"
         alt="High Tee Classics product">
 
       <img
-        src="assets/product-3.jpg"
-        alt="High Tee Classics laundry soap">
+        src="assets/images/IMG-20260923-WA0077.jpg"
+        alt="High Tee Classics product">
+
+      <img
+        src="assets/images/IMG-20260923-WA0078.jpg"
+        alt="High Tee Classics product">
+
+      <img
+        src="assets/images/IMG-20260923-WA0079(1).jpg"
+        alt="High Tee Classics product">
 
     </div>
 
   </section>
 
 
-  <!-- CTA -->
   <section class="product-final-cta">
 
     <span class="eyebrow">
@@ -596,7 +599,6 @@
 </main>
 
 
-<!-- FOOTER -->
 <footer class="site-footer">
 
   <div class="footer-main">
@@ -673,7 +675,6 @@
 </footer>
 
 
-<!-- WHATSAPP -->
 <a
   href="https://wa.me/2347066778612"
   target="_blank"
